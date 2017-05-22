@@ -28,7 +28,7 @@ v1.00, 05/22/2017 - Initial version
 #------------------------------------------------
 
 $dir_bin = 'C:\iis_temp'
-$bin_files = $bin + "\*.*"
+$bin_files = $dir_bin + "\*.*"
 $chk_bin = Test-Path -path $dir_bin
 
 $date = (Get-Date).ToString('MM-dd-yyyy hh:mm')
@@ -62,7 +62,7 @@ if ($chk_iis_dir -eq $false) {
 
 if ($chk_bin -eq $false) {
   
-  mkdir $bin
+  mkdir $dir_bin
   
   }
 
