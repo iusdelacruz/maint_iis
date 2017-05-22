@@ -68,7 +68,7 @@ if ($chk_bin -eq $false) {
 
 rm $bin_files
 
-if ($chk_scrlogs -eq $false {
+if ($chk_scrlogs -eq $false) {
   
   mkdir $dir_scrlogs
   
